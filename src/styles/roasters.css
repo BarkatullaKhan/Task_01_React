@@ -1,0 +1,84 @@
+.roaster {
+    height: fit-content;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+button{
+    background-color: black!important;
+    border-radius: 50% !important;
+    height: 12px!important;
+    width: 12px!important;
+    display: none;
+    
+}
+
+span{
+    background-color:  #67D1D1 !important;;
+    /* color: black!important; */
+}
+/* .carousel-control-next, .carousel-control-prev span:nth-child(2){
+    background-color: black !important;
+    color: black;
+} */
+
+.roasterContent {
+    height: 300px;
+    width: 20%;
+    max-width: 25%;
+    margin: 10px;
+    padding: 1.5625rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #67D1D1 !important;;
+    /* float: left; */
+    /* display: none; */
+
+   
+
+}
+
+
+
+.roasterImg {
+    height: 60%;
+    width: 100%;
+}
+
+/* .btn-container {
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(65, 142, 88);
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+} */
+
+/* .btn-left,
+.btn-right {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #007584;
+    color: #007584;
+    cursor: pointer;
+    margin: 10px;
+} */
+
+
+
+/* .btn-disabled{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #484848;
+    color: #484848;
+    margin: 10px;
+
+} */
