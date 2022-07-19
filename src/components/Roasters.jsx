@@ -9,6 +9,9 @@ const Roasters = (props) => {
   useEffect(() => {
     let newItemsArray = [];
     let rosterArray = [];
+
+    // rosterArray = [[item0,item1,item2,item3],[item4,item5,...],[]];
+
     for (let i = 0; i < Object.keys(props.roasters.roasterItems).length; i++) {
       if (i === 0) {
         newItemsArray.push("item" + i);

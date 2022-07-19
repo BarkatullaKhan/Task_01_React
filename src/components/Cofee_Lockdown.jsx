@@ -9,7 +9,7 @@ const CofeeLockdown = (props) => {
       <div>
         <img
         //   src="${cofeeLockdownModel.cofeeImage}"
-          src="https://picsum.photos/1080/300"
+          src="https://breville.scene7.com/is/image/brevilleprod/coffee-101?ts=1654878496095&dpr=off"
           alt="pic"
           srcset=""
           class="cofee_img"

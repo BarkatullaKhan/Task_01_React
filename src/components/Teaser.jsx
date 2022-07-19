@@ -22,11 +22,10 @@ const Teaser = (props) => {
           {itemsArray.map((item) => {
             return (
               <div className="col-md-6 col-sm-6 col-xs-12 col-lg-3 " key={item}>
-                <div className="card teaser-card  border-0 mt-2 " key={item}>
+                <div className="card teaser-card  border-0 mt-2 align-items-center justify-content-center " key={item}>
                   <img
-                    className="card-img-top p-2"
-                    src="https://picsum.photos/1080
-                  "
+                    className="card-img-top p-2 w-50 h-50 "
+                    src={props.teaser.allTeasers[item].teaserImage}
                     alt="Card  cap"
                   ></img>
                   <div className="card-body">
