@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <Navbar bg="dark" variant="dark">
       {/* <Container> */}
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="/">
         <img
           src="https://www.beanz.com/content/experience-fragments/beanz/us/en/site/header/master/_jcr_content/root/image.coreimg.svg/1649175807319/beanz-white.svg"
           alt="beanz"
@@ -15,11 +15,11 @@ const NavBar = () => {
         />
       </Navbar.Brand>
       <Nav className="me-auto">
-        <Nav.Link href="#home">Shop Coffee</Nav.Link>
-        <Nav.Link href="#features">Our Roasters</Nav.Link>
-        <Nav.Link href="#pricing">Barista's Choice</Nav.Link>
-        <Nav.Link href="#pricing">Coffee Lowdown</Nav.Link>
-        <Nav.Link href="#pricing">Our Story</Nav.Link>
+        <Nav.Link href="shop_coffee">Shop Coffee</Nav.Link>
+        <Nav.Link href="#roasters">Our Roasters</Nav.Link>
+        <Nav.Link href="#baristas_choice">Barista's Choice</Nav.Link>
+        <Nav.Link href="#cofee_lockdown">Coffee Lowdown</Nav.Link>
+        <Nav.Link href="#our_story">Our Story</Nav.Link>
       </Nav>
       {/* </Container> */}
     </Navbar>

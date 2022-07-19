@@ -3,20 +3,20 @@ import  logoImg from '../img/beanz-by-breville-logo-white.svg'
 
 const Footer = () => {
   return (
-    <div class="footer_container">
-      <div class="footer_logo_container">
+    <div className="footer_container">
+      <div className="footer_logo_container">
         <a href="http://localhost:4502/content/aemApp/en/home.html">
           <img
             src={logoImg}
             alt=""
-            srcset=""
-            class="footer_logo"
+            srcSet=""
+            className="footer_logo"
           ></img>
         </a>
       </div>
 
-      <div class="footer_content">
-        <div class="content">
+      <div className="footer_content">
+        <div className="content">
           <h3>Site</h3>
           <ul>
             <li>
@@ -41,7 +41,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div class="content">
+        <div className="content">
           <h3>Account</h3>
           <ul>
             <li>
@@ -52,7 +52,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div class="content">
+        <div className="content">
           <h3>Support</h3>
           <ul>
             <li>
@@ -69,7 +69,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div class="content">
+        <div className="content">
           <h3>Follow Us</h3>
           <ul>
             <li>

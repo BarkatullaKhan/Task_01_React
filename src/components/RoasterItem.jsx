@@ -14,7 +14,7 @@ const RoasterItem = (props) => {
             // src={props.roasters.roasterItems[props.item].roasterImg}
             src={props.roasters.roasterItems[props.item].roasterImg}
             alt="none"
-            srcset=""
+            srcSet=""
             className="roasterImg"
           />
 

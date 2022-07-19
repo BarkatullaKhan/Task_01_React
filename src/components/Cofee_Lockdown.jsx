@@ -2,8 +2,8 @@ import '../styles/cofee_lockdown.css'
 
 const CofeeLockdown = (props) => {
   return (
-    <div class="cofee_lockdown">
-      <div class="title">
+    <div className="cofee_lockdown">
+      <div className="title">
         <h1>Coffee Lowdown</h1>
       </div>
       <div>
@@ -11,12 +11,12 @@ const CofeeLockdown = (props) => {
         //   src="${cofeeLockdownModel.cofeeImage}"
           src="https://breville.scene7.com/is/image/brevilleprod/coffee-101?ts=1654878496095&dpr=off"
           alt="pic"
-          srcset=""
-          class="cofee_img"
+          srcSet=""
+          className="cofee_img"
         ></img>
       </div>
-      <div class="details_text">
-        <div class="left_details">
+      <div className="details_text">
+        <div className="left_details">
         
           <h2>{props.cofee_lockdown.leftTitle}</h2>
           <div>
@@ -24,7 +24,7 @@ const CofeeLockdown = (props) => {
             <p>{props.cofee_lockdown.leftDescription}</p>
           </div>
         </div>
-        <div class="right_details">
+        <div className="right_details">
          
           <h2>{props.cofee_lockdown.rightTitle}</h2>
           <div>
@@ -33,8 +33,8 @@ const CofeeLockdown = (props) => {
           </div>
         </div>
       </div>
-      <div class="quiz_btn_container">
-        <a href="https://www.beanz.com/us/en/questionnaire.html" class="qb">
+      <div className="quiz_btn_container">
+        <a href="https://www.beanz.com/us/en/questionnaire.html" className="qb">
           Learn more about coffee
         </a>
       </div>
