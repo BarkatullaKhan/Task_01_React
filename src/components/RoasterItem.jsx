@@ -12,7 +12,7 @@ const RoasterItem = (props) => {
         >
           <img
             // src={props.roasters.roasterItems[props.item].roasterImg}
-            src="https://picsum.photos/200/300"
+            src={props.roasters.roasterItems[props.item].roasterImg}
             alt="none"
             srcset=""
             className="roasterImg"

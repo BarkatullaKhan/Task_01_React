@@ -9,7 +9,7 @@ const PerfectBean = (props) => {
       <div className="perfect_bean_details">
         <div>
           <img
-            src="https://picsum.photos/200/300"
+            src="https://www.beanz.com/content/beanz/us/en/_jcr_content/root/container/container/container_22661836_c/teaser.coreimg.png/1650609378092/filter-coffee.png"
             alt="Left "
             srcset=""
             className="left_image"
@@ -38,7 +38,7 @@ const PerfectBean = (props) => {
 
         <div>
           <img
-            src="https://picsum.photos/200/300"
+            src="https://www.beanz.com/content/beanz/us/en/_jcr_content/root/container/container/container_22661836_c/teaser_1300781075.coreimg.png/1650609399018/espresso-coffee.png"
             alt="Right "
             srcset=""
             className="right_image"
