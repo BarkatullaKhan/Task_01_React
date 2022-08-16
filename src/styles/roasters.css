@@ -1,22 +1,30 @@
 .roaster {
     height: fit-content;
-    width:100%;
+    width:90%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Montserrat",sans-serif;
     
 }
-button{
+
+.roaster-title{
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+}
+
+
+/* button{
     background-color: black!important;
     border-radius: 50% !important;
     height: 12px!important;
     width: 12px!important;
     display: none;
     
-}
+} */
 
-span{
-    background-color:  #67D1D1 !important;;
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    background-color:  #d19a67 !important;;
     /* color: black!important; */
 }
 /* .carousel-control-next, .carousel-control-prev span:nth-child(2){
@@ -24,13 +32,20 @@ span{
     color: black;
 } */
 
+.carousel-indicators{
+    /* color: red; */
+    display: none !important;
+}
+
+
+
 .roasterContent {
-    height: 300px;
-    width: 20%;
-    max-width: 25%;
-    margin: 10px;
+    height: 280px;
+    width: 15%;
+    /* max-width: 25%; */
+    margin: 20px;
     padding: 1.5625rem;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     text-align: center;
     text-decoration: none;
@@ -82,3 +97,6 @@ span{
     margin: 10px;
 
 } */
+
+
+

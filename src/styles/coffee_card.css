@@ -1,0 +1,34 @@
+.coffee-card-a {
+  width: 18rem;
+  height: fit-content;
+  text-decoration: none;
+  
+}
+
+.coffee_Card {
+  width: 18rem;
+  min-height: 30rem;
+  max-height: fit-content;
+}
+
+.coffee-card-img{
+    height: 15rem;
+}
+
+.coffee-card-body{
+    background-color:#FAF7F5 ;
+}
+
+.coffee-card-roaster-name{
+    color: rgb(0,117,132);
+}
+.coffee-card-item-name{
+    color: #2B2B2D;
+}
+.coffee-card-description{
+    color: #2B2B2D;
+}
+
+.coffee-card-price{
+    color: #A25E41;
+}

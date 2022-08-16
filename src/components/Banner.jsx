@@ -1,31 +1,45 @@
 import React, { Component } from "react";
 import "../styles/banner.css";
-
-import beanz_home_banner from '../img/beanz_home_banner.webp'
+import { useNavigate } from "react-router-dom";
 
 const Banner = (props) => {
-    
-  return (
-    <div className="container-fluid h-auto p-0">
+  const navigate = useNavigate();
 
+  return (
+    <div className="container-fluid h-auto p-0 ">
       <div className="banner-container">
-      <img src={beanz_home_banner} alt="Banner " className="back-image"></img>
+        <img
+          src={
+            process.env.REACT_APP_HOST +
+            ":" +
+            process.env.REACT_APP_PORT +
+            props.banner.bannerImage
+          }
+          alt="Banner "
+          className="back-image"
+        ></img>
         <div className="inner-banner">
-          
           <h1>{props.banner.bannerTitle}</h1>
           <div className="banner_desc">
-            
             <p>{props.banner.description}</p>
           </div>
-          <div className="banner_action">
-            <a
-              data-sly-test={props.banner.actionText }
-              href={props.banner.actionLink}
-              className="action_link"
+          {props.banner.actionText !== undefined ? (
+            <div
+              className="banner_action"
+              onClick={() => navigate(props.banner.actionLink)}
             >
-              {props.banner.actionText}
-            </a>
-          </div>
+              <a
+                data-sly-test={props.banner.actionText}
+                // href={props.banner.actionLink}
+                className="action_link"
+                style={{ cursor: "pointer" }}
+              >
+                {props.banner.actionText}
+              </a>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>

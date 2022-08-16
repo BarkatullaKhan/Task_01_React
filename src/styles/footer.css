@@ -2,6 +2,7 @@
     height: auto;
     background-color: #2B2B2D;
     color: white;
+    font-family: "Montserrat",sans-serif;
 }
 .footer_logo_container{
     height: 20%;
@@ -32,9 +33,6 @@
     .footer_content{
         /* display: flex; */
         flex-direction: column;
-       
-    
-    
     }
   }
   

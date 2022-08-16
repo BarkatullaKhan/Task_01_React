@@ -2,7 +2,7 @@
     height: auto;
     background-color: #FAF7F5;
     padding-bottom: 20px;
-   
+    font-family: 'Bitter', serif;
     
 }
 .perfect_bean_details{
@@ -10,6 +10,9 @@
     padding-bottom: 2.5rem;
   
    
+}
+.bold-title{
+    font-weight: bold;
 }
 .perfect_bean_title{
     text-align: center;

@@ -1,44 +1,59 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import { useNavigate } from "react-router-dom";
 import "../styles/perfect_bean.css";
 
 const PerfectBean = (props) => {
+  const navigate = useNavigate();
   return (
     <div className="perfect_bean_container">
       <div className="perfect_bean_title">
-        <h1>Find your perfect beans</h1>
+        <h1 className="bold-title m-4">{props.perfect_bean.title}</h1>
       </div>
-      <div className="perfect_bean_details">
-        <div>
+      <div className="perfect_bean_details row">
+        <div className="col-sm-10 col-md-2 col-lg-2">
           <img
-            src="https://www.beanz.com/content/beanz/us/en/_jcr_content/root/container/container/container_22661836_c/teaser.coreimg.png/1650609378092/filter-coffee.png"
+            src={
+              process.env.REACT_APP_HOST +
+              ":" +
+              process.env.REACT_APP_PORT +
+              props.perfect_bean.leftImage
+            }
             alt="Left "
             srcSet=""
-            className="left_image"
+            className="left_image "
           ></img>
         </div>
-        <div className="perfect_bean_texts">
-          <div className="left">
-            <h1>{props.perfect_bean.leftTitle}</h1>
-            <div>
-              <p>{props.perfect_bean.leftDescription}</p>
+        <div className="perfect_bean_texts col-sm-10 col-md-8 col-lg-8 ">
+          <div className="row text-center">
+            <div className="left text-center col-sm-12 col-md-5 col-lg-5">
+              <h2 className="bold-title">{props.perfect_bean.leftTitle}</h2>
+              <div>
+                <p>{props.perfect_bean.leftDescription}</p>
+              </div>
             </div>
-          </div>
 
-          <div className="or_text">
-            <h1>OR</h1>
-          </div>
+            <div className="or_text text-center col-sm-12 col-md-1 col-lg-1">
+              <h1 className="bold-title">OR</h1>
+            </div>
 
-          <div className="right">
-            <h1>{props.perfect_bean.rightTitle}</h1>
+            <div className="right text-center col-sm-12 col-md-4 col-lg-5">
+              <h2 className="bold-title">{props.perfect_bean.rightTitle}</h2>
 
-            <div>
-              <p>{props.perfect_bean.rightDescription}</p>
+              <div>
+                <p>{props.perfect_bean.rightDescription}</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div>
+        <div className="col-sm-10 col-md-2 col-lg-2">
           <img
-            src="https://www.beanz.com/content/beanz/us/en/_jcr_content/root/container/container/container_22661836_c/teaser_1300781075.coreimg.png/1650609399018/espresso-coffee.png"
+            src={
+              process.env.REACT_APP_HOST +
+              ":" +
+              process.env.REACT_APP_PORT +
+              props.perfect_bean.rightImage
+            }
             alt="Right "
             srcSet=""
             className="right_image"
@@ -46,8 +61,11 @@ const PerfectBean = (props) => {
         </div>
       </div>
       <div className="quiz_btn_container">
-        <a href="https://www.beanz.com/us/en/questionnaire.html" className="qb">
-          Take Our Quiz
+        <a
+          onClick={() => navigate(props.perfect_bean.quizBtnLink)}
+          className="qb"
+        >
+          {props.perfect_bean.quizBtnText}
         </a>
       </div>
     </div>
